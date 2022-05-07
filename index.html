@@ -44,13 +44,29 @@
     <p class="section__description">Our aim is to make it quick and easy for you to access your favourite websites.
       Your bookmarks sync between your devices so you can access them on the go.</p>
     <div class="section__content">
-      <div class="features-tab">
-        <nav class="features-tab__nav" aria-label="tab menu">
-          <div class="features-tab__nav-link">Simple Bookmarking</div>
-          <div class="features-tab__nav-link">Speedy Searching</div>
-          <div class="features-tab__nav-link">Easy Sharing</div>
-        </nav>
-        <div class="features-tab-1">
+      <div class="features-tabs">
+        <ul class="features-tabs__list" aria-label="tab menu" role="tablist">
+          <li class="features-tabs__item" role="presentation">
+            <a href="#features-bookmarking" class="tabs__link" id="tab-features-bookmarking"
+               role="tab" aria-controls="features-bookmarking" aria-selected="true" tabindex="0">
+              Simple Bookmarking
+            </a>
+          </li>
+          <li class="features-tabs__item" role="presentation">
+            <a href="#features-searching" class="tabs__link" id="tab-features-searching"
+               role="tab" aria-controls="features-searching" aria-selected="false" tabindex="-1">
+              Speedy Searching
+            </a>
+          </li>
+          <li class="features-tabs__item" role="presentation">
+            <a href="#features-sharing" class="tabs__link" id="tab-features-sharing"
+               role="tab" aria-controls="features-sharing" aria-selected="false" tabindex="-1">
+              Easy Sharing
+            </a>
+          </li>
+        </ul>
+        <div id="features-bookmarking" class="features-tab"
+             role="tabpanel" aria-labelledby="tab-features-bookmarking" aria-hidden="true">
           <img src="./images/illustration-features-tab-1.svg" alt="illustration-features-tab-1" class="features-tab__image">
           <div class="features-tab__content">
             <h3 class="features-tab__title">Bookmark in one click</h3>
@@ -59,7 +75,8 @@
             <button class="features-tab__button">More Info</button>
           </div>
         </div>
-        <div class="features-tab-2">
+        <div id="features-searching" class="features-tab"
+             role="tabpanel" aria-labelledby="tab-features-searching" aria-hidden="true">
           <img src="./images/illustration-features-tab-2.svg" alt="illustration-features-tab-2" class="features-tab__image">
           <div class="features-tab__content">
             <h3 class="features-tab__title">Intelligent search</h3>
@@ -68,7 +85,8 @@
             <button class="features-tab__button">More Info</button>
           </div>
         </div>
-        <div class="features-tab-3">
+        <div id="features-sharing" class="features-tab"
+             role="tabpanel" aria-labelledby="tab-features-sharing" aria-hidden="true">
           <img src="./images/illustration-features-tab-3.svg" alt="illustration-features-tab-3" class="features-tab__image">
           <div class="features-tab__content">
             <h3 class="features-tab__title">Share your bookmarks</h3>
