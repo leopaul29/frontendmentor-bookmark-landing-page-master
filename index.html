@@ -50,19 +50,22 @@
         <ul class="features-tabs__list" aria-label="tab menu" role="tablist">
           <li class="features-tabs__item" role="presentation">
             <a href="#features-bookmarking" class="tabs__link" id="tab-features-bookmarking"
-               role="tab" aria-controls="features-bookmarking" aria-selected="true" tabindex="0">
+               role="tab" aria-controls="features-bookmarking" aria-selected="true" tabindex="0"
+               onclick="updateTab(0)">
               Simple Bookmarking
             </a>
           </li>
           <li class="features-tabs__item" role="presentation">
             <a href="#features-searching" class="tabs__link" id="tab-features-searching"
-               role="tab" aria-controls="features-searching" aria-selected="false" tabindex="-1">
+               role="tab" aria-controls="features-searching" aria-selected="false" tabindex="-1"
+               onclick="updateTab(1)">
               Speedy Searching
             </a>
           </li>
           <li class="features-tabs__item" role="presentation">
             <a href="#features-sharing" class="tabs__link" id="tab-features-sharing"
-               role="tab" aria-controls="features-sharing" aria-selected="false" tabindex="-1">
+               role="tab" aria-controls="features-sharing" aria-selected="false" tabindex="-1"
+               onclick="updateTab(2)">
               Easy Sharing
             </a>
           </li>
@@ -198,5 +201,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </p>
 </div>
+<!-- script -->
+<script src="script.js"></script>
 </body>
 </html>
