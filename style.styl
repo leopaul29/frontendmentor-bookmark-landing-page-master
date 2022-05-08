@@ -30,32 +30,43 @@ a
 
 // components
 .btn
-    padding: 15px 30px
-    background-color: color-light-gray
-    color: color-white
-    border: none
-    border-radius: 5px
+    padding: 15px 25px
+    border: 2px solid 
+    border-radius: 10px
     font-weight: 500
     font-size 16px
     &:hover
         cursor pointer
 .btn_action
     background-color: color-soft-red
+    color: color-white
+    border-color: color-soft-red
+    &:hover
+        color: color-soft-red
+        background-color: color-white
 .btn_primary
     background-color: color-soft-blue
+    color: color-white
+    border-color: color-soft-blue
+    &:hover
+        color: color-soft-blue
+        background-color: color-white
 .btn_secondary
     background-color: color-light-gray
     color: color-very-dark-blue
+    border-color: color-light-gray
+    &:hover
+        border-color: color-very-dark-blue
 h1
     font-size: 46px
     color: color-very-dark-blue
     font-weight: 500
 h2
-    font-size: 28px
+    font-size: 32px
     color: color-very-dark-blue
     font-weight: 500
 h3
-    font-size: 24px
+    font-size: 28px
     color: color-very-dark-blue
     font-weight: 500
 p
@@ -66,12 +77,13 @@ p
     height: 450px;
     width: 700px;
     background-color: color-soft-blue;
-    border-radius: 0% 0% 0% 30%
+    border-radius: 30% 0% 0% 30%
 
 // DOM
 body
     max-width width-desktop
     margin auto
+    padding: 0px 200px
 
 .header
     padding-top: 50px
@@ -94,9 +106,8 @@ body
                 color: color-very-dark-blue
                 text-transform: uppercase
                 letter-spacing: 2px;
-            .menu__link-action
-                color: color-white
-                padding: 15px 50px
+                .btn_action                    
+                    padding: 15px 35px
     .hero
         padding-top: 150px
         display: flex
@@ -117,11 +128,12 @@ body
                 gap: 30px
         .hero__image
             position relative
+            margin-right: 50px
             .bubble    
                 right: -70px;
                 bottom: -20px;
             img
-                width 900px
+                width 800px
 
 .main
     .section
@@ -137,28 +149,51 @@ body
                 margin-bottom: 20px
             .section__description
                 width: 550px
-.features-tabs
-    .features-tabs__list
-        display: flex
-        flex-direction: row
-        justify-content: center
-        margin-bottom: 80px
-        .features-tabs__item
-            width 250px
-            height: 50px
-            text-align: center
-            border-bottom: 1px solid color-light-gray
-            .tabs__link
-                display: inline-block
-                width 100%
-                height 100%
-                font-weight: 500
-                color color-grayish-blue
-                &[aria-selected='true']
-                    color: color-very-dark-blue
-                    width: 250px
-                    border-bottom: 5px solid color-soft-red
-    .features-tab__container
-        display: flex
-        flex-direction: row
-        justify-content: space-around
+.section__features
+    margin-bottom: 300px
+    .features-tabs
+        .features-tabs__list
+            display: flex
+            flex-direction: row
+            justify-content: center
+            margin-bottom: 80px
+            .features-tabs__item
+                width 250px
+                height: 50px
+                text-align: center
+                border-bottom: 1px solid color-light-gray
+                .tabs__link
+                    display: inline-block
+                    width 100%
+                    height 100%
+                    font-weight: 500
+                    color color-grayish-blue
+                    &[aria-selected='true']
+                        color: color-very-dark-blue
+                        width: 250px
+                        border-bottom: 5px solid color-soft-red
+                    &:hover
+                        color: color-soft-red
+        .features-tab__container
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center;
+            gap: 100px
+            .features-tab__image
+                position relative
+                .bubble    
+                    right: 150px;
+                    bottom: -100px;
+                    transform: rotate(180deg);
+                    width: 650px;
+                img
+                    width 600px
+            .features-tab__content
+                display: flex
+                flex-direction: column
+                gap: 30px
+                .features-tab__description
+                    max-width: 450px
+                .features-tab__button
+                    width 150px
