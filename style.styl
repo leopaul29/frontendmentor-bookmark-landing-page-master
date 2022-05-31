@@ -197,3 +197,46 @@ body
                     max-width: 450px
                 .features-tab__button
                     width 150px
+.section__extension
+    margin-bottom: 150px
+    .extensions-card-list
+        display: flex
+        flex-direction: row
+        gap: 30px
+        .extension-card
+            display: flex
+            flex-direction: column
+            border-radius: 10px
+            box-shadow: 2px 2px 2px 1px rgba(0, 0.2, 0.2, 0.2)
+            .extension-card__content
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 10px
+                border-bottom: 1px var(--color-grayish-blue) dotted
+                .extension-card__image
+                    width: 100px
+                    margin-bottom: 30px
+                .extension-card__title
+                    font-size: 18px
+                    color: color-very-dark-blue
+                    font-weight: 500
+                    margin-bottom: 8px
+                .extension-card__version
+                    font-size: 14px
+                    margin-bottom: 30px
+            .extension-card-middle-border
+                height: 1px
+                background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+                background-position: top;
+                background-size: 12px 3px;
+                background-repeat: repeat-x;
+            .extension-card__footer
+                padding: 20px
+        .extension-card-chrome
+            margin-bottom: 50px
+        .extension-card-firefox
+            margin-top: 25px
+            margin-bottom: 25px
+        .extension-card-opera
+            margin-top: 50px
