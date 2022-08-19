@@ -1,0 +1,39 @@
+.header
+    .header__nav.header__desktop
+        display: none
+    .header__nav.header__mobile
+        margin: 50px 40px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        .header__logo
+            height: 30px
+        .header__menuIcon
+            height: 15px
+    .hero
+        display: grid
+        margin-top: 100px
+        .hero__image
+            position relative
+            grid-row-start: row-start 1
+            .header__bubble
+                right: 0
+                top: 60px
+                height: 220px;
+                width: 300px;
+        .hero__content
+            grid-row-start: row-start 2
+            margin: 50px
+            display: flex
+            flex-direction: column
+            gap: 30px
+            text-align: center
+            .hero__title
+                //width: 450px
+            .hero__description
+                //width 480px
+            .hero__buttons
+                display: flex
+                flex-direction: row
+                gap: 30px

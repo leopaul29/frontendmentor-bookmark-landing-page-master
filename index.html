@@ -15,7 +15,11 @@
 
 <body>
   <header class="header">
-    <div class="header__nav">
+    <div class="header__nav header__mobile">
+      <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="header__logo">
+      <img src="./images/icon-hamburger.svg" alt="logo-bookmark" class="header__menuIcon">
+    </div>
+    <div class="header__nav header__desktop">
       <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="header__logo">
       <nav class="nav__menu" aria-label="Site menu">
         <div class="menu__link">Features</div>
@@ -35,7 +39,7 @@
         </div>
       </div>
       <div class="hero__image">
-        <div class="bubble"></div>
+        <div class="bubble header__bubble"></div>
         <img src="./images/illustration-hero.svg" alt="illustration-hero">
       </div>
     </div>
