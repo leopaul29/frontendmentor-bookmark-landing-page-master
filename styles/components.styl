@@ -48,7 +48,8 @@ p
     font-size: 14px
     line-height: 25px//28px
 img
-    max-width: 100%
+    max-inline-size: 100%
+    block-size: auto
 .bubble
     position absolute
     z-index -1
@@ -56,3 +57,7 @@ img
     width: 100px //700px
     background-color: color-soft-blue
     border-radius: 30% 0% 0% 30%
+
+@media screen and (min-width:width-mobile)
+    body
+        background-color: green

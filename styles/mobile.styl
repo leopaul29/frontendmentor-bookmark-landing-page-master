@@ -2,7 +2,7 @@
     .header__nav.header__desktop
         display: none
     .header__nav.header__mobile
-        margin: 50px 40px
+        margin: 50px 30px
         display: flex
         flex-direction: row
         justify-content: space-between
@@ -14,17 +14,19 @@
     .hero
         display: grid
         margin-top: 100px
-        .hero__image
+        .hero__header
             position relative
             grid-row-start: row-start 1
             .header__bubble
                 right: 0
                 top: 60px
-                height: 220px;
-                width: 300px;
+                height: 210px
+                width: 290px
+            .hero__image
+                margin: 0px 10px
         .hero__content
             grid-row-start: row-start 2
-            margin-top: 50px
+            margin-top: 60px
             display: flex
             flex-direction: column
             gap: 30px
@@ -67,7 +69,7 @@
                 justify-content: center
                 margin-bottom: 80px
                 .features-tabs__item
-                    width 250px
+                    //width 250px
                     height: 50px
                     text-align: center
                     border-bottom: 1px solid color-light-gray
@@ -79,7 +81,7 @@
                         color color-grayish-blue
                         &[aria-selected='true']
                             color: color-very-dark-blue
-                            width: 250px
+                            //width: 250px
                             border-bottom: 5px solid color-soft-red
                         &:hover
                             color: color-soft-red
@@ -95,14 +97,14 @@
                         right: 150px;
                         bottom: -100px;
                         transform: rotate(180deg);
-                        width: 650px;
+                        //width: 650px;
                     img
-                        width 600px
+                        //width 600px
                 .features-tab__content
                     display: flex
                     flex-direction: column
                     gap: 30px
                     .features-tab__description
-                        max-width: 450px
+                        //max-width: 450px
                     .features-tab__button
-                        width 150px
+                        //width 150px
