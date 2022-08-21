@@ -127,12 +127,24 @@ img
                 justify-content: space-between
                 .accordion-block__question-text
                     color: color-very-dark-blue
-                    margin-right: 12px;
+                    //margin-right: 12px;
                 .accordion-block__question-arrow
                     height: 12px
+                    .accordions__link
+                        height: 100%
+                        width: 18px
+                        display: block
+                        background-repeat: no-repeat
+                    .accordions__link--no-selected
+                        background-image: url("../images/icon-arrow.svg")
+                    .accordions__link--selected
+                        background-image: url("../images/icon-arrow-selected.svg")
+                        transform: rotate(180deg);
                     //margin-right: 12px
             .accordion-block__answer
                 display: none
+                line-height: 25px
+                margin: 10px 15px 30px 0px
 
 // desktop
 @media screen and (min-width:width-mobile)

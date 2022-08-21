@@ -47,9 +47,13 @@ function updateAccordion(index) {
 			if (isSelected === "true") {
 				accordion__link.setAttribute("aria-selected", false);
 				accordion__answer.style.display = "none";
+				accordion__link.classList.add("accordions__link--no-selected");
+				accordion__link.classList.remove("accordions__link--selected");
 			} else {
 				accordion__link.setAttribute("aria-selected", true);
 				accordion__answer.style.display = "block";
+				accordion__link.classList.add("accordions__link--selected");
+				accordion__link.classList.remove("accordions__link--no-selected");
 			}
 		}
 	});
