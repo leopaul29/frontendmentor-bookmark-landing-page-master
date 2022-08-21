@@ -2,15 +2,65 @@
     .header__nav.header__desktop
         display: none
     .header__nav.header__mobile
-        margin: 50px 30px
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
+        .nav__header
+            margin: 50px 30px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
         .header__logo
             height: 30px
         .header__menuIcon
             height: 15px
+        .nav__menuburger
+            display: none
+            position: fixed
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100vw
+            height: 100vh
+            background-color: color-very-dark-blue
+            opacity 0.9
+            .nav__menucontent                
+                .menu__header
+                    margin: 50px 30px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    align-items: center
+                    .nav__logo
+                        height: 30px
+                    .nav__menuIcon
+                        height: 15px
+                .nav__menu
+                    margin: 0px 30px;
+                    border-top: 1px solid color-grayish-blue
+                    .menu__link
+                        text-transform: uppercase
+                        letter-spacing: 2px;
+                        font-size: 18px
+                        color: color-white   
+                        text-align: center
+                        padding: 20px                 
+                        border-bottom: 1px solid color-grayish-blue
+                .nav__button
+                    margin: 30px 30px;
+                    button
+                        width: 100%
+                        text-transform: uppercase
+                        letter-spacing: 2px;
+                        font-size: 18px
+                        color: color-white
+                        background-color: color-very-dark-blue
+                        border-color: color-white
+                .nav__social
+                    margin-top 150px
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    gap: 50px
+
     .hero
         display: grid
         margin-top: 100px

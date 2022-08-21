@@ -72,3 +72,15 @@ function invalidEmailMsg(textbox) {
 		document.querySelector(".form__invalidEmail").style.display = "none";
 	}
 }
+
+// toggle burger menu
+function toggleMobileMenu(open) {
+	console.log(open);
+	if (open) {
+		document.querySelector(".nav__menuburger").style.display = "block";
+		document.querySelector(".nav__header").style.opacity = "0";
+	} else {
+		document.querySelector(".nav__menuburger").style.display = "none";
+		document.querySelector(".nav__header").style.opacity = "1";
+	}
+}

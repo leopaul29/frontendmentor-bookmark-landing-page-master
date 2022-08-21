@@ -16,8 +16,34 @@
 <body>
   <header class="header">
     <div class="header__nav header__mobile">
-      <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="header__logo">
-      <img src="./images/icon-hamburger.svg" alt="logo-bookmark" class="header__menuIcon">
+      <div class="nav__header">
+        <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="header__logo">
+        <a onclick="toggleMobileMenu(true)">
+          <img src="./images/icon-hamburger.svg" alt="logo-bookmark" class="header__menuIcon">
+        </a>
+      </div>
+      <nav class="nav__menuburger">
+        <div class="nav__menucontent">
+          <div class="menu__header">
+            <img src="./images/logo-bookmark-white-nav.svg" alt="logo-bookmark" class="nav__logo">
+            <a onclick="toggleMobileMenu(false)">
+              <img src="./images/icon-close.svg" alt="logo-close" class="nav__menuIcon">
+            </a>
+          </div>
+          <nav class="nav__menu" aria-label="Site menu">
+            <div class="menu__link">Features</div>
+            <div class="menu__link">Pricing</div>
+            <div class="menu__link">Contact</div>
+          </nav>
+          <div class="nav__button">
+            <button class="btn btn-primary">Login</button>
+          </div>
+          <div class="nav__social">
+            <img src="./images/icon-facebook.svg" alt="icon-facebook" class="social__facebook">
+            <img src="./images/icon-twitter.svg" alt="icon-twitter" class="social__twitter">
+          </div>
+        </div>
+      </nav>
     </div>
     <div class="header__nav header__desktop">
       <img src="./images/logo-bookmark.svg" alt="logo-bookmark" class="header__logo">
