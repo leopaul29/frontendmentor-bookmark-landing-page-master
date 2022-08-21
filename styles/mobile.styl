@@ -59,10 +59,12 @@
                 padding: 10px 50px
                 //width: 550px
     .section__features
+        //margin: 150px 30px 300px 30px
         margin-top: 150px
-        margin-bottom: 300px
+        //margin-bottom: 300px
         .features-tabs
             .features-tabs__list
+                margin: 0px 30px
                 // display: flex
                 // flex-direction: column
                 // align-items: center
@@ -83,7 +85,7 @@
                         border-bottom: 5px solid color-white
                         // width 100%
                         // height 100%
-                        font-weight: 500
+                        font-weight: 600
                         color color-grayish-blue
                         &[aria-selected='true']
                             color: color-very-dark-blue
@@ -91,26 +93,49 @@
                             border-bottom: 5px solid color-soft-red
                         &:hover
                             color: color-soft-red
+            #features-bookmarking
+                .tab__image
+                    height: 200px
+            #features-searching, #features-sharing
+                .tab__image
+                    height: 250px
             .features-tab__container
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center;
-                gap: 100px
-                .features-tab__image
-                    position relative
-                    .bubble    
-                        right: 150px;
-                        bottom: -100px;
-                        transform: rotate(180deg);
-                        //width: 650px;
-                    img
-                        //width 600px
+                display: grid
+                margin-top: 50px
+                // display: flex
+                // flex-direction: row
+                // justify-content: space-around
+                // align-items: center
+                // gap: 100px
+                .features-tab__image-container
+                    height: 250px
+                    margin-bottom 70px
+                    .features-tab__image
+                        //height: 250px
+                        position relative
+                        grid-row-start: row-start 1
+                        margin-bottom: 40px
+                        .bubble
+                            top: 35px;
+                            height: 100%
+                            transform: rotate(180deg)
+                            width: 285px//650px
+                        .tab__image
+                            margin: 0px 30px
+                            //height: 250px;
+                            //width 600px
                 .features-tab__content
+                    //margin-top 30px
+                    grid-row-start: row-start 2
                     display: flex
                     flex-direction: column
                     gap: 30px
+                    text-align: center
+                    padding: 0px 45px
                     .features-tab__description
                         //max-width: 450px
                     .features-tab__button
+                        display: none
                         //width 150px
+    .section__extension
+        margin-top: 150px
