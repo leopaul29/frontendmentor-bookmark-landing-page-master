@@ -58,3 +58,17 @@ function updateAccordion(index) {
 		}
 	});
 }
+
+// form validation
+function invalidEmailMsg(textbox) {
+	console.log("invalidEmailMsg:" + textbox);
+	if (textbox.value === "" || textbox.validity.typeMismatch) {
+		document.querySelector(".form__email").classList.add("form__email--error");
+		document.querySelector(".form__invalidEmail").style.display = "block";
+	} else {
+		document
+			.querySelector(".form__email")
+			.classList.remove("form__email--error");
+		document.querySelector(".form__invalidEmail").style.display = "none";
+	}
+}

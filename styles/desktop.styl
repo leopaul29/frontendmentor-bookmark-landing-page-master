@@ -1,0 +1,283 @@
+
+// desktop
+@media screen and (min-width:width-mobile)
+    body
+        background-color: green
+    // components
+    .btn
+        padding: 15px 25px
+        border: 2px solid 
+        border-radius: 10px
+        font-weight: 500
+        font-size 16px
+        &:hover
+            cursor pointer
+    .btn_action
+        background-color: color-soft-red
+        color: color-white
+        border-color: color-soft-red
+        &:hover
+            color: color-soft-red
+            background-color: color-white
+    .btn_primary
+        background-color: color-soft-blue
+        color: color-white
+        border-color: color-soft-blue
+        &:hover
+            color: color-soft-blue
+            background-color: color-white
+    .btn_secondary
+        background-color: color-light-gray
+        color: color-very-dark-blue
+        border-color: color-light-gray
+        &:hover
+            border-color: color-very-dark-blue
+    h1
+        font-size: 46px
+        color: color-very-dark-blue
+        font-weight: 500
+    h2
+        font-size: 32px
+        color: color-very-dark-blue
+        font-weight: 500
+    h3
+        font-size: 28px
+        color: color-very-dark-blue
+        font-weight: 500
+    p
+        line-height: 28px
+    .bubble
+        position absolute
+        z-index -1
+        height: 450px
+        width: 700px
+        background-color: color-soft-blue
+        border-radius: 30% 0% 0% 30%
+
+    // DOM
+    body
+        max-width width-desktop
+        margin auto
+        padding: 0px 200px
+
+    .header
+        padding-top: 50px
+        padding-bottom: 100px
+        .header__nav
+            height: 50px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            .header__logo
+                height: 35px
+            .nav__menu
+                display: flex
+                flex-direction: row
+                align-items:  center
+                gap: 60px
+                padding: 0px 150px
+                .menu__link
+                    color: color-very-dark-blue
+                    text-transform: uppercase
+                    letter-spacing: 2px;
+                    .btn_action                    
+                        padding: 15px 35px
+        .hero
+            padding-top: 150px
+            display: flex
+            flex-direction: row
+            align-items:  center
+            justify-content: space-between
+            .hero__content
+                display: flex
+                flex-direction: column
+                gap: 30px
+                .hero__title
+                    width: 450px
+                .hero__description
+                    width 480px
+                .hero__buttons
+                    display: flex
+                    flex-direction: row
+                    gap: 30px
+            .hero__image
+                position relative
+                margin-right: 50px
+                .bubble    
+                    right: -70px;
+                    bottom: -20px;
+                img
+                    width 800px
+
+    .main
+        .section
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 30px
+            .section__header
+                text-align: center
+                margin-bottom: 30px
+                .section__title
+                    margin-bottom: 20px
+                .section__description
+                    width: 550px
+    .section__features
+        margin-bottom: 300px
+        .features-tabs
+            .features-tabs__list
+                display: flex
+                flex-direction: row
+                justify-content: center
+                margin-bottom: 80px
+                .features-tabs__item
+                    width 250px
+                    height: 50px
+                    text-align: center
+                    border-bottom: 1px solid color-light-gray
+                    .tabs__link
+                        display: inline-block
+                        width 100%
+                        height 100%
+                        font-weight: 500
+                        color color-grayish-blue
+                        &[aria-selected='true']
+                            color: color-very-dark-blue
+                            width: 250px
+                            border-bottom: 5px solid color-soft-red
+                        &:hover
+                            color: color-soft-red
+            .features-tab__container
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                align-items: center;
+                gap: 100px
+                .features-tab__image
+                    position relative
+                    .bubble    
+                        right: 150px;
+                        bottom: -100px;
+                        transform: rotate(180deg);
+                        width: 650px;
+                    img
+                        width 600px
+                .features-tab__content
+                    display: flex
+                    flex-direction: column
+                    gap: 30px
+                    .features-tab__description
+                        max-width: 450px
+                    .features-tab__button
+                        width 150px
+    .section__extension
+        margin-bottom: 150px
+        .extensions-card-list
+            display: flex
+            flex-direction: row
+            gap: 30px
+            .extension-card
+                display: flex
+                flex-direction: column
+                border-radius: 10px
+                box-shadow: 2px 2px 2px 1px rgba(0, 0.2, 0.2, 0.2)
+                .extension-card__content
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    padding: 10px
+                    //border-bottom: 1px color-grayish-blue dotted
+                    .extension-card__image
+                        width: 100px
+                        margin-bottom: 30px
+                    .extension-card__title
+                        font-size: 18px
+                        color: color-very-dark-blue
+                        font-weight: 500
+                        margin-bottom: 8px
+                    .extension-card__version
+                        font-size: 14px
+                        margin-bottom: 30px
+                .extension-card-middle-border
+                    height: 1px
+                    background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+                    background-position: top;
+                    background-size: 12px 3px;
+                    background-repeat: repeat-x;
+                .extension-card__footer
+                    padding: 20px
+            .extension-card-chrome
+                margin-bottom: 50px
+            .extension-card-firefox
+                margin-top: 25px
+                margin-bottom: 25px
+            .extension-card-opera
+                margin-top: 50px
+    .section__faq
+        margin-bottom: 150px
+        .accordion
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 50px
+            .accordion-block-list
+                width: 600px
+                border-top: 2px solid color-light-gray
+                .accordion-block
+                    border-bottom: 2px solid color-light-gray
+                    .accordion-block__question
+                        cursor pointer
+                        padding: 18px 0px
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: space-between
+                        .accordion-block__question-text
+                            color: color-very-dark-blue
+                        .accordion-block__question-arrow
+                            height: 12px
+                            margin-right: 12px
+                    .accordion-block__answer
+                        display: none
+    .section__contact 
+        background-color: color-soft-blue
+        .contact__joined
+            color: color-white
+        .contact__title
+            color: color-white
+            width: 430px
+            text-align: center
+
+    .footer 
+        background-color: color-very-dark-blue
+        height: 100px;
+        display: flex
+        flex-direction: row 
+        justify-content: center
+        align-items: center;
+        .footer__nav
+            height: 20px;
+            max-width width-desktop
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center;
+            .footer__menu
+                display: flex
+                flex-direction: row
+                width: 500px
+                .menu__link
+                    width: 110px
+                    text-transform: uppercase
+            .footer__social
+                display: flex
+                flex-direction: row
+                gap: 30px
+
+    // frontendmentor
+    .attribution a
+        font-size: 11px
+        text-align: center
+        color: hsl(228, 45%, 44%)

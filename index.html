@@ -266,9 +266,10 @@
         <h2 class="contact__title">Stay up-to-date with what we’re doing</h2>
       </div>
       <form action="#" class="contact__form">
-        <div class="form__email">
-          <input type="text" name="email" id="email" class="form__input" placeholder="Enter your email address"
-            required>
+        <div class="form__email ">
+          <input type="email" name="email" id="email" class="form__input" placeholder="Enter your email address"
+            oninvalid="invalidEmailMsg(this);" required>
+          <p class="form__invalidEmail">Whoops, make sure it's an email</p>
         </div>
         <button type="submit" class="form__submit btn btn_action">Contact Us</button>
       </form>
