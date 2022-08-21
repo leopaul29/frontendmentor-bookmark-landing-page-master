@@ -1,12 +1,10 @@
 
 // components
 .btn
-    //padding: 15px 25px
     padding: 15px 12px
     border: 2px solid 
     border-radius: 10px
     font-weight: 600
-    //font-size 16px
     font-size 14px
     &:hover
         cursor pointer
@@ -53,21 +51,69 @@ img
 .bubble
     position absolute
     z-index -1
-    height: 100px //450px
-    width: 100px //700px
+    height: 100px
+    width: 100px
     background-color: color-soft-blue
     border-radius: 30% 0% 0% 30%
 
-// extensions
+// features carousel
+.features-tabs
+    .features-tabs__list
+        margin: 0px 30px
+        border-top: 1px solid color-light-gray
+        .features-tabs__item
+            text-align: center
+            border-bottom: 1px solid color-light-gray
+            .tabs__link
+                display: inline-block
+                padding: 20px 0px
+                border-bottom: 5px solid color-white
+                font-weight: 600
+                color color-grayish-blue
+                &[aria-selected='true']
+                    color: color-very-dark-blue
+                    width: 250px
+                    border-bottom: 5px solid color-soft-red
+                &:hover
+                    color: color-soft-red
+    #features-bookmarking
+        .tab__image
+            height: 200px
+    #features-searching, #features-sharing
+        .tab__image
+            height: 250px
+    .features-tab__container
+        display: grid
+        margin-top: 50px
+        .features-tab__image-container
+            height: 250px
+            margin-bottom 70px
+            .features-tab__image
+                position relative
+                grid-row-start: row-start 1
+                margin-bottom: 40px
+                .bubble
+                    top: 35px;
+                    height: 100%
+                    transform: rotate(180deg)
+                    width: 285px
+                .tab__image
+                    margin: 0px 30px
+        .features-tab__content
+            grid-row-start: row-start 2
+            display: flex
+            flex-direction: column
+            gap: 30px
+            text-align: center
+            padding: 0px 45px
+            .features-tab__description
+            .features-tab__button
+                display: none
+
+// extensions card
 .extensions-card-list
     padding: 0px 50px;
-    //display: flex
-    //flex-direction: row
-    //gap: 30px
     .extension-card
-        // display: flex
-        // flex-direction: column
-        // align-items: center;
         border-radius: 10px
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1)
         .extension-card__content
@@ -75,9 +121,7 @@ img
             flex-direction: column
             align-items: center
             padding: 10px
-            //border-bottom: 1px color-grayish-blue dotted
             .extension-card__image
-                //width: 100px
                 margin: 30px 0px
             .extension-card__title
                 font-size: 18px
@@ -108,46 +152,68 @@ img
 
 // accordion
 .accordion
-    // display: flex
-    // flex-direction: column
-    // align-items: center
     padding: 0px 40px
     gap: 50px
-    .accordion-block-list
-        //width: 600px
-        //border-top: 2px solid color-light-gray
-        .accordion-block
-            border-bottom: 2px solid color-light-gray
-            .accordion-block__question
-                cursor pointer
-                padding: 18px 0px
-                display: flex
-                flex-direction: row
-                align-items: center
-                justify-content: space-between
-                .accordion-block__question-text
-                    color: color-very-dark-blue
-                    //margin-right: 12px;
-                .accordion-block__question-arrow
-                    height: 12px
-                    .accordions__link
-                        height: 100%
-                        width: 18px
-                        display: block
-                        background-repeat: no-repeat
-                        transition: .3s transform;
-                    .accordions__link--no-selected
-                        background-image: url("../images/icon-arrow.svg")
-                    .accordions__link--selected
-                        background-image: url("../images/icon-arrow-selected.svg")
-                        transform: rotate(180deg);
-                    //margin-right: 12px
-            .accordion-block__answer
-                display: none;
-                line-height: 25px
-                margin: 10px 15px 30px 0px
+    .accordion-block
+        border-bottom: 2px solid color-light-gray
+        .accordion-block__question
+            cursor pointer
+            padding: 18px 0px
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            .accordion-block__question-text
+                color: color-very-dark-blue
+            .accordion-block__question-arrow
+                height: 12px
+                .accordions__link
+                    height: 100%
+                    width: 18px
+                    display: block
+                    background-repeat: no-repeat
+                    transition: .3s transform;
+                .accordions__link--no-selected
+                    background-image: url("../images/icon-arrow.svg")
+                .accordions__link--selected
+                    background-image: url("../images/icon-arrow-selected.svg")
+                    transform: rotate(180deg);
+        .accordion-block__answer
+            display: none;
+            line-height: 25px
+            margin: 10px 15px 30px 0px
+
+// contact form
+.contact__form
+    text-align: center
+    padding: 0px 40px
+    margin-bottom 30px
+    .form__email
+        margin-bottom 15px
+    .form__input, .form__submit
+        width: 100%
+    .form__input
+        font-size: max(16px, 1em);
+        padding: 1em;
+        border-radius: 10px;
+        border: 0px
+        height: 50px;
+    .form__input:focus:invalid
+        background: url("../images/icon-error.svg") no-repeat 95% 50% color-white;
+        background-size: 25px;
+    .form__invalidEmail
+        display: none
+        color: color-white
+        font-size: 10px
+        font-style: italic
+        text-align: left
+        padding-left 1em
+    .form__email--error
+        background-color: color-soft-red
+        border-radius: 10px
+        border: 1px solid color-soft-red
+
 
 // desktop
-@media screen and (min-width:width-mobile)
-    body
-        background-color: green
+//@media screen and (min-width:width-mobile)
+

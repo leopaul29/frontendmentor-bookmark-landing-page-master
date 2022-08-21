@@ -21,7 +21,13 @@ color-white = hsl(0, 0%, 100%)
     font-family: 'Rubik', sans-serif;
     font-size: 14px
     color: color-grayish-blue
+body
+    max-width: width-mobile
 
 @import components
 @import mobile
-@import desktop
+
+//@media screen and (max-width:width-mobile)
+/*
+@media screen and (min-width:width-mobile)
+    @import desktop*/

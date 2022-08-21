@@ -1,263 +1,147 @@
 .header
     .header__nav.header__desktop
-        display: none
+        display none
     .header__nav.header__mobile
         .nav__header
-            margin: 50px 30px
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-            align-items: center
+            margin 50px 30px
+            display flex
+            flex-direction row
+            justify-content space-between
+            align-items center
         .header__logo
-            height: 30px
+            height 30px
         .header__menuIcon
-            height: 15px
+            height 15px
         .nav__menuburger
-            display: none
-            position: fixed
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100vw
-            height: 100vh
-            background-color: color-very-dark-blue
+            max-width width-mobile
+            display none
+            position fixed
+            top 0
+            left 0
+            z-index 1
+            width 100vw
+            height 100vh
+            background-color color-very-dark-blue
             opacity 0.9
             .nav__menucontent                
                 .menu__header
-                    margin: 50px 30px
-                    display: flex
-                    flex-direction: row
-                    justify-content: space-between
-                    align-items: center
+                    margin 50px 30px
+                    display flex
+                    flex-direction row
+                    justify-content space-between
+                    align-items center
                     .nav__logo
-                        height: 30px
+                        height 30px
                     .nav__menuIcon
-                        height: 15px
+                        height 15px
                 .nav__menu
-                    margin: 0px 30px;
-                    border-top: 1px solid color-grayish-blue
+                    margin 0px 30px
+                    border-top 1px solid color-grayish-blue
                     .menu__link
-                        text-transform: uppercase
-                        letter-spacing: 2px;
-                        font-size: 18px
-                        color: color-white   
-                        text-align: center
-                        padding: 20px                 
-                        border-bottom: 1px solid color-grayish-blue
+                        text-transform uppercase
+                        letter-spacing 2px
+                        font-size 18px
+                        color color-white   
+                        text-align center
+                        padding 20px                 
+                        border-bottom 1px solid color-grayish-blue
                 .nav__button
-                    margin: 30px 30px;
+                    margin 30px 30px
                     button
-                        width: 100%
-                        text-transform: uppercase
-                        letter-spacing: 2px;
-                        font-size: 18px
-                        color: color-white
-                        background-color: color-very-dark-blue
-                        border-color: color-white
+                        width 100%
+                        text-transform uppercase
+                        letter-spacing 2px
+                        font-size 18px
+                        color color-white
+                        background-color color-very-dark-blue
+                        border-color color-white
                 .nav__social
                     margin-top 150px
-                    display: flex
-                    flex-direction: row
-                    justify-content: center
-                    gap: 50px
+                    display flex
+                    flex-direction row
+                    justify-content center
+                    gap 50px
 
     .hero
-        display: grid
-        margin-top: 100px
+        display grid
+        margin-top 100px
         .hero__header
             position relative
-            grid-row-start: row-start 1
+            grid-row-start row-start 1
             .header__bubble
-                right: 0
-                top: 60px
-                height: 210px
-                width: 290px
+                right 0
+                top 60px
+                height 210px
+                width 290px
             .hero__image
-                margin: 0px 10px
+                margin 0px 10px
         .hero__content
-            grid-row-start: row-start 2
-            margin-top: 60px
-            display: flex
-            flex-direction: column
-            gap: 30px
-            text-align: center
+            grid-row-start row-start 2
+            margin-top 60px
+            display flex
+            flex-direction column
+            gap 30px
+            text-align center
             .hero__title
-                padding: 0px 50px
-                //width: 450px
+                padding 0px 50px
             .hero__description
-                padding: 0px 50px
-                //width 480px
+                padding 0px 50px
             .hero__buttons
-                padding: 0px 30px
-                display: flex
-                flex-direction: row
-                justify-content: center
-                gap: 10px//30px
+                padding 0px 30px
+                display flex
+                flex-direction row
+                justify-content center
+                gap 10px
 
 .main
     .section
-        margin-top: 150px
-        // display: flex
-        // flex-direction: column
-        // align-items: center
-        // justify-content: center
+        margin-top 150px
         .section__header
-            text-align: center
-            margin-bottom: 30px
-            padding: 0px 40px
+            text-align center
+            margin-bottom 30px
+            padding 0px 40px
             .section__title
-                margin-bottom: 10px
-            .section__description
-                //width: 550px
-    .section__features
-        //margin: 150px 30px 300px 30px
-        //margin-top: 150px
-        //margin-bottom: 300px
-        .features-tabs
-            .features-tabs__list
-                margin: 0px 30px
-                // display: flex
-                // flex-direction: column
-                // align-items: center
-                border-top: 1px solid color-light-gray
-                // display: flex
-                // flex-direction: row
-                // justify-content: center
-                //margin-bottom: 80px
-                .features-tabs__item
-                    // width 250px
-                    //position relative
-                    //height: 50px
-                    text-align: center
-                    border-bottom: 1px solid color-light-gray
-                    .tabs__link
-                        display: inline-block
-                        padding: 20px 0px
-                        border-bottom: 5px solid color-white
-                        // width 100%
-                        // height 100%
-                        font-weight: 600
-                        color color-grayish-blue
-                        &[aria-selected='true']
-                            color: color-very-dark-blue
-                            width: 250px
-                            border-bottom: 5px solid color-soft-red
-                        &:hover
-                            color: color-soft-red
-            #features-bookmarking
-                .tab__image
-                    height: 200px
-            #features-searching, #features-sharing
-                .tab__image
-                    height: 250px
-            .features-tab__container
-                display: grid
-                margin-top: 50px
-                // display: flex
-                // flex-direction: row
-                // justify-content: space-around
-                // align-items: center
-                // gap: 100px
-                .features-tab__image-container
-                    height: 250px
-                    margin-bottom 70px
-                    .features-tab__image
-                        //height: 250px
-                        position relative
-                        grid-row-start: row-start 1
-                        margin-bottom: 40px
-                        .bubble
-                            top: 35px;
-                            height: 100%
-                            transform: rotate(180deg)
-                            width: 285px//650px
-                        .tab__image
-                            margin: 0px 30px
-                            //height: 250px;
-                            //width 600px
-                .features-tab__content
-                    //margin-top 30px
-                    grid-row-start: row-start 2
-                    display: flex
-                    flex-direction: column
-                    gap: 30px
-                    text-align: center
-                    padding: 0px 45px
-                    .features-tab__description
-                        //max-width: 450px
-                    .features-tab__button
-                        display: none
-                        //width 150px
-    .section__extension
-        //margin-top: 150px
+                margin-bottom 10px
     .section__faq
-        //margin-top: 150px
         .accordion
-            margin-bottom: 50px
+            margin-bottom 50px
         .accordion__buttonzone
-            text-align: center;
+            text-align center
             .accordion__button
-                padding: 15px 20px;
+                padding 15px 20px
     .section__contact
-        background-color: color-soft-blue
-        padding: 50px 0px 10px 0px;
+        background-color color-soft-blue
+        padding 50px 0px 10px 0px
         .contact__joined
-            text-transform: uppercase
-            letter-spacing: 3px;
-            font-size: 12px;
-            color: color-white 
+            text-transform uppercase
+            letter-spacing 3px
+            font-size 12px
+            color color-white 
         .contact__title
             margin-top 10px
-            color: color-white 
-        .contact__form
-            text-align: center
-            padding: 0px 40px
-            margin-bottom 30px
-            .form__email
-                margin-bottom 15px
-            .form__input, .form__submit
-                width: 100%
-            .form__input
-                font-size: max(16px, 1em);
-                padding: 1em;
-                border-radius: 10px;
-                border: 0px
-                height: 50px;
-            .form__input:focus:invalid
-                background: url("../images/icon-error.svg") no-repeat 95% 50% color-white;
-                background-size: 25px;
-            .form__invalidEmail
-                display: none
-                color: color-white
-                font-size: 10px
-                font-style: italic
-                text-align: left
-                padding-left 1em
-            .form__email--error
-                background-color: color-soft-red
-                border-radius: 10px
-                border: 1px solid color-soft-red
+            color color-white     
+
 .footer
-    background-color: color-very-dark-blue
+    background-color color-very-dark-blue
     .footer__nav
-        display: flex
-        flex-direction: column
-        align-items: center;
-        padding: 50px 0px
-        gap: 50px
+        display flex
+        flex-direction column
+        align-items center
+        padding 50px 0px
+        gap 50px
         .footer__menu
-            display: flex
-            flex-direction: column
-            align-items: center;
-            gap: 30px
+            display flex
+            flex-direction column
+            align-items center
+            gap 30px
             .menu__link
-                text-transform: uppercase
-                letter-spacing: 1px;
-                color: color-white
+                text-transform uppercase
+                letter-spacing 1px
+                color color-white
         .footer__social
-            display: flex
-            flex-direction: row
-            gap: 50px
+            display flex
+            flex-direction row
+            gap 50px
 .attribution
-    position: fixed
+    position fixed
     bottom 0
