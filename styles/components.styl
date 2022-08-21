@@ -57,14 +57,17 @@ img
     width: 100px //700px
     background-color: color-soft-blue
     border-radius: 30% 0% 0% 30%
+
+// extensions
 .extensions-card-list
+    padding: 0px 50px;
     //display: flex
     //flex-direction: row
     //gap: 30px
     .extension-card
-        display: flex
-        flex-direction: column
-        align-items: center;
+        // display: flex
+        // flex-direction: column
+        // align-items: center;
         border-radius: 10px
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1)
         .extension-card__content
@@ -93,6 +96,8 @@ img
             background-repeat: repeat-x;
         .extension-card__footer
             padding: 20px
+            .extension-card__button                
+                width: 100%;
     .extension-card-chrome
         margin-bottom: 50px
     .extension-card-firefox
@@ -100,6 +105,35 @@ img
         margin-bottom: 25px
     .extension-card-opera
         margin-top: 50px
+
+// accordion
+.accordion
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 50px
+    .accordion-block-list
+        //width: 600px
+        //border-top: 2px solid color-light-gray
+        .accordion-block
+            border-bottom: 2px solid color-light-gray
+            .accordion-block__question
+                cursor pointer
+                padding: 18px 0px
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+                .accordion-block__question-text
+                    color: color-very-dark-blue
+                .accordion-block__question-arrow
+                    height: 12px
+                    //margin-right: 12px
+                    margin-left: 12px;
+            .accordion-block__answer
+                display: none
+
+// desktop
 @media screen and (min-width:width-mobile)
     body
         background-color: green
