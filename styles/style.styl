@@ -24,10 +24,10 @@ color-white = hsl(0, 0%, 100%)
 body
     max-width: width-mobile
 
-@import components
-@import mobile
 
-//@media screen and (max-width:width-mobile)
-/*
+@media screen and (max-width:width-mobile)
+    @import components
+    @import mobile
+
 @media screen and (min-width:width-mobile)
-    @import desktop*/
+    @import desktop
