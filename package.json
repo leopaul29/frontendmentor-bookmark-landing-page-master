@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "stylus -w styles/style.styl -o style.css",
-		"build": "stylus --compress styles/style.styl style.css"
+		"build": "stylus --compress styles/style.styl -o style.css"
 	},
 	"author": "leopaul29",
 	"license": "ISC",
