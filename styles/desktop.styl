@@ -55,7 +55,7 @@ p
     border-radius: 30% 0% 0% 30%
 
 // DOM
-body
+header,section
     max-width width-desktop
     margin auto
     padding: 0px 200px
@@ -70,7 +70,7 @@ body
         justify-content: space-between
         align-items: center
         .header__logo
-            height: 35px
+            height: 30px
         .nav__menu
             display: flex
             flex-direction: row
@@ -80,6 +80,9 @@ body
                 color: color-very-dark-blue
                 text-transform: uppercase
                 letter-spacing: 2px;
+                &:hover
+                    cursor pointer
+                    color: color-soft-red
                 .btn_action                    
                     padding: 15px 35px
     .hero
@@ -107,10 +110,9 @@ body
                 right: 0px;
                 bottom: 0px;
             .hero__image
+                max-width: 800px
                 position relative
                 margin-right: 50px
-                img
-                    width 800px
 
 .main
     .section
@@ -223,6 +225,8 @@ body
             margin-top: 50px
 .section__faq
     margin-bottom: 150px
+    .section__description
+        width: 400px;
     .accordion__buttonzone
         text-align center
         .accordion__button
@@ -265,6 +269,7 @@ body
                     line-height: 25px
                     margin: 10px 15px 30px 0px
 .section__contact
+    max-width: 100%
     background-color color-soft-blue
     padding 50px 0px 10px 0px
     .contact__joined
@@ -311,6 +316,8 @@ body
     background-color: color-very-dark-blue
     padding: 40px
     .footer__nav
+        margin: auto
+        max-width: width-desktop
         display: flex
         flex-direction: row
         justify-content: space-between;
@@ -323,6 +330,9 @@ body
                 width: 110px
                 text-transform uppercase
                 letter-spacing 1px
+                &:hover
+                    cursor pointer
+                    color: color-soft-red
         .footer__social
             display: flex
             flex-direction: row
