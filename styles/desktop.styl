@@ -1,3 +1,5 @@
+*
+    font-size: 16px
 .header
     .header__nav.header__desktop
         display: flex
@@ -8,8 +10,8 @@
     padding: 15px 25px
     border: 2px solid 
     border-radius: 10px
-    font-weight: 600
-    font-size 16px
+    font-weight: 500
+    font-size 14px
     &:hover
         cursor pointer
 .btn_action
@@ -35,16 +37,17 @@
 h1
     font-size: 46px
     color: color-very-dark-blue
-    font-weight: 600
+    font-weight: 500
 h2
     font-size: 32px
     color: color-very-dark-blue
-    font-weight: 600
+    font-weight: 500
 h3
     font-size: 28px
     color: color-very-dark-blue
-    font-weight: 600
+    font-weight: 500
 p
+    font-size: 16px
     line-height: 28px
 .bubble
     position absolute
@@ -70,7 +73,7 @@ header,section
         justify-content: space-between
         align-items: center
         .header__logo
-            height: 30px
+            height: 25px
         .nav__menu
             display: flex
             flex-direction: row
@@ -86,7 +89,7 @@ header,section
                 .btn_action                    
                     padding: 15px 35px
     .hero
-        padding-top: 150px
+        margin-top: 100px
         display: flex
         flex-direction: row
         align-items:  center
@@ -97,7 +100,7 @@ header,section
             gap: 30px
             .hero__title
                 width: 450px
-                font-weight: 600
+                font-weight: 500
             .hero__description
                 max-width 380px
             .hero__buttons
@@ -108,9 +111,9 @@ header,section
             position relative
             .bubble
                 right: 0px;
-                bottom: 0px;
+                top: 150px;
+                height: 333px
             .hero__image
-                max-width: 800px
                 position relative
                 margin-right: 50px
 
@@ -131,8 +134,9 @@ header,section
 .section__features
     margin-bottom: 300px
     .section__description
-        max-width: 400px
+        max-width: 450px
     .features-tabs
+        height: 260px;
         .features-tabs__list
             display: flex
             flex-direction: row
@@ -147,7 +151,7 @@ header,section
                     display: inline-block
                     width 100%
                     height 100%
-                    font-weight: 600
+                    font-weight: 500
                     color color-grayish-blue
                     &[aria-selected='true']
                         color: color-very-dark-blue
@@ -164,24 +168,25 @@ header,section
             .features-tab__image
                 position relative
                 .bubble    
-                    right: 150px;
-                    bottom: -100px;
+                    right: 100px;
+                    top: 100px;
                     transform: rotate(180deg);
                     width: 600px;
-                img
-                    width 600px
+                    height: 320px
             .features-tab__content
+                width: 500px
                 display: flex
                 flex-direction: column
                 gap: 30px
                 .features-tab__description
-                    max-width: 450px
+                    max-width: 390px
                 .features-tab__button
                     width 150px
 .section__extension
+    padding-top: 150px;
     margin-bottom: 150px
     .section__description
-        width: 435px
+        max-width: 465px
     .extensions-card-list
         display: flex
         flex-direction: row
@@ -190,7 +195,7 @@ header,section
             display: flex
             flex-direction: column
             border-radius: 10px
-            box-shadow: 2px 2px 2px 1px rgba(0, 0.2, 0.2, 0.2)
+            box-shadow: 2px 2px 2px 1px rgba(0, 0.1, 0.1, 0.1)
             .extension-card__content
                 display: flex
                 flex-direction: column
@@ -203,7 +208,7 @@ header,section
                 .extension-card__title
                     font-size: 18px
                     color: color-very-dark-blue
-                    font-weight: 600
+                    font-weight: 500
                     margin-bottom: 8px
                 .extension-card__version
                     font-size: 14px
@@ -226,7 +231,7 @@ header,section
 .section__faq
     margin-bottom: 150px
     .section__description
-        width: 400px;
+        max-width: 435px;
     .accordion__buttonzone
         text-align center
         .accordion__button
@@ -238,7 +243,7 @@ header,section
         gap: 50px
         margin-bottom 50px
         .accordion-block-list
-            width: 600px
+            width: 500px
             border-top: 2px solid color-light-gray
             .accordion-block
                 border-bottom: 2px solid color-light-gray
@@ -251,6 +256,8 @@ header,section
                     justify-content: space-between
                     .accordion-block__question-text
                         color: color-very-dark-blue
+                        &:hover
+                            color: color-soft-red
                     .accordion-block__question-arrow
                         height: 12px
                         .accordions__link
@@ -266,20 +273,20 @@ header,section
                             transform: rotate(180deg);
                 .accordion-block__answer
                     display: none;
-                    line-height: 25px
-                    margin: 10px 15px 30px 0px
+                    line-height: 30px
+                    margin: 20px 15px 30px 0px
 .section__contact
     max-width: 100%
     background-color color-soft-blue
     padding 50px 0px 10px 0px
     .contact__joined
         text-transform uppercase
-        letter-spacing 3px
+        letter-spacing 4px
         font-size 12px
         color color-white 
     .contact__title
-        margin-top 10px
-        width: 430px
+        margin-top 20px
+        max-width: 430px
         color color-white  
     .contact__form
         text-align: center
@@ -314,7 +321,7 @@ header,section
 
 .footer 
     background-color: color-very-dark-blue
-    padding: 40px
+    padding: 40px 200px
     .footer__nav
         margin: auto
         max-width: width-desktop
@@ -325,13 +332,16 @@ header,section
         .footer__menu
             display: flex
             flex-direction: row
-            width: 500px
+            //width: 500px
+            gap: 50px
+            align-items: center
             .menu__link
-                width: 110px
+                color color-white
+                //width: 110px
                 text-transform uppercase
                 letter-spacing 1px
+                cursor pointer
                 &:hover
-                    cursor pointer
                     color: color-soft-red
         .footer__social
             display: flex
@@ -340,9 +350,7 @@ header,section
 
 // frontendmentor
 .attribution
-    position fixed
-    bottom 0
-.attribution a
     font-size: 11px
     text-align: center
-    color: hsl(228, 45%, 44%)
+    a
+        color: hsl(228, 45%, 44%)    
